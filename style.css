@@ -166,7 +166,7 @@ h1, h2, h3 { color: var(--ink); }
 .tile figcaption strong { font-family: var(--serif); font-weight: 400; font-size: 26px; line-height: 1.1; }
 .tile figcaption span { order: -1; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-soft); margin-bottom: 4px; }
 @media (max-width: 900px) { .grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 240px; } }
-@media (max-width: 560px) { .grid { grid-template-columns: 1fr; grid-auto-rows: 220px; gap: 12px; } .tile--tall { grid-row: span 1; height: 380px; } .head--row { align-items: flex-start; } }
+@media (max-width: 560px) { .grid { grid-template-columns: 1fr; grid-auto-rows: auto; gap: 12px; } .tile { height: 240px; } .tile--tall { grid-row: auto; height: 420px; } .head--row { align-items: flex-start; } }
 
 /* Experience */
 .exp { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
